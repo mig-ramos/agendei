@@ -1,16 +1,20 @@
-import { COLORS, FONT_SIZE } from "../../constants/theme.js"
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = {
-    
-    btn: {
-        with: "100%",
-        backgroundColor: COLORS.blue,
-        padding: 6,
-        borderRadius: 12
-    },
-    text: {
-        color: "#FFF",
-        fontSize: FONT_SIZE.md,
-        textAlign: "center"
-    }
-}
+  btn: {
+    width: "100%",
+    borderRadius: 6,
+    padding: 12,
+  },
+  primary: {
+    backgroundColor: COLORS.blue,
+  },
+  danger: {
+    backgroundColor: COLORS.red,
+  },
+  text: {
+    color: "#fff",
+    fontSize: FONT_SIZE.md,
+    textAlign: "center",
+  },
+};
