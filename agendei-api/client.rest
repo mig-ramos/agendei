@@ -31,3 +31,24 @@ Content-Type: application/json
 
 ### Exclir doctor
 DELETE {{baseUrl}}/doctors/2
+
+##Rota Users
+
+### Inserir usuário
+POST {{baseUrl}}/users/register
+Content-Type: application/json
+
+{
+   "name": "João Martins",
+   "email": "joaol@test.com",
+   "password": "123456"
+}
+
+### Login usuário
+POST {{baseUrl}}/users/login
+Content-Type: application/json
+
+{
+   "email": "miguel@test.com",
+   "password": "123456"
+}
