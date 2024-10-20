@@ -1,7 +1,33 @@
 @baseUrl = http://localhost:3001
 
 
-### Rota Doctors
+## Rota Doctors
 
-# Listar os médicos 
+### Listar os médicos 
 GET {{baseUrl}}/doctors/
+
+### Pesquisar Doctor
+GET {{baseUrl}}/doctors?name=Martins
+
+### Inserir doctor
+POST {{baseUrl}}/doctors/
+Content-Type: application/json
+
+{
+   "name": "João Silva",
+   "specialty": "Pediatra",
+   "icon": "M"
+}
+
+### Alterar doctor
+PUT {{baseUrl}}/doctors/7
+Content-Type: application/json
+
+{
+    "name": "Dr João Silva",
+    "specialty": "Pediatra",
+    "icon": "M"
+}
+
+### Exclir doctor
+DELETE {{baseUrl}}/doctors/2
