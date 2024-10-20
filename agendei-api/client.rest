@@ -1,10 +1,12 @@
 @baseUrl = http://localhost:3001
+@token = 
 
 
 ## Rota Doctors
 
 ### Listar os médicos 
 GET {{baseUrl}}/doctors/
+Authorization: Bearer {{token}} 
 
 ### Pesquisar Doctor
 GET {{baseUrl}}/doctors?name=Martins
@@ -39,8 +41,8 @@ POST {{baseUrl}}/users/register
 Content-Type: application/json
 
 {
-   "name": "João Martins",
-   "email": "joaol@test.com",
+   "name": "Maria Martins",
+   "email": "jmaria@test.com",
    "password": "123456"
 }
 
