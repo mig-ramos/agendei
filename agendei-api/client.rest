@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3001
-@token = 
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c2VyIjoxLCJpYXQiOjE3Mjk1MTM0NTEsImV4cCI6MTczOTUxMzQ1MH0.ERLmMOMhU1XiI7IEFbUuDHnU51nI3ITTuM4daiCOeEQ
 
 
 ## Rota Doctors
@@ -32,7 +32,24 @@ Content-Type: application/json
 }
 
 ### Exclir doctor
-DELETE {{baseUrl}}/doctors/2
+DELETE {{baseUrl}}/doctors/3
+
+### Serviços 
+GET {{baseUrl}}/doctors/6/services
+Authorization: Bearer {{token}}
+
+### Appointments 
+GET {{baseUrl}}/appointments
+Authorization: Bearer {{token}}
+
+### Appointments 
+POST {{baseUrl}}/appointments
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Exclir appointment
+DELETE {{baseUrl}}/appointments/5
+Authorization: Bearer {{token}}
 
 ##Rota Users
 
@@ -54,3 +71,7 @@ Content-Type: application/json
    "email": "miguel@test.com",
    "password": "123456"
 }
+
+### User Profile
+GET  {{baseUrl}}/users/profile
+Authorization: Bearer {{token}}
