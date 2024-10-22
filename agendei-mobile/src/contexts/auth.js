@@ -4,12 +4,7 @@ import { createContext } from "react";
 const AuthContext = createContext({});
 
 function AuthProvider(props) {
-  const [user, setUser] = useState({
-    id_user: 4,
-    name: "Miguel StackActions",
-    email: "miguel@test.com",
-    token: "kdfionmdskfjsdlknfgnvkisdufusds",
-  });
+  const [user, setUser] = useState({});
   return (
     <AuthContext.Provider value={{ user, setUser }}>
       {props.children}

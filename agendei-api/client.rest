@@ -58,8 +58,8 @@ POST {{baseUrl}}/users/register
 Content-Type: application/json
 
 {
-   "name": "Maria Martins",
-   "email": "jmaria@test.com",
+   "name": "Mario Martins",
+   "email": "mario@test.com",
    "password": "123456"
 }
 

@@ -40,6 +40,7 @@ function Main() {
                     } />
                 },
                 tabBarShowLabel: false,
+                unmountOnBlur: true,
                 tabBarIcon: ({ focused }) => {
                     return <Image source={icon.calendar} style={
                         {
@@ -59,6 +60,7 @@ function Main() {
                     } />
                 },
                 tabBarShowLabel: false,
+                unmountOnBlur: true,
                 tabBarIcon: ({ focused }) => {
                     return <Image source={icon.profile} style={
                         {
