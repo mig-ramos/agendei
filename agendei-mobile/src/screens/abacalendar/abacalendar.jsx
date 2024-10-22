@@ -52,12 +52,12 @@ function AbaCalendar() {
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => {
                 return <Appointment id_appointment={item.id_appointment}
+                doctor={item.doctor}
                 service={item.service}
-                    doctor={item.doctor}
-                    specialty={item.specialty}
-                    bookingDate={item.booking_date}
-                    bookingHour={item.booking_hour}
-                    onPress={DeleteAppointments} />
+                specialty={item.specialty}
+                bookingDate={item.booking_date}
+                bookingHour={item.booking_hour}
+                onPress={DeleteAppointments} />
             }} />
     </View>
 }
