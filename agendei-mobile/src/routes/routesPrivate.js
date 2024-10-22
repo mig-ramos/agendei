@@ -33,7 +33,10 @@ function RoutesPrivate() {
         name="schedule"
         component={Schedule}
         options={{
-          headerShown: false,
+          headerTitle: "Fazer uma reserva",
+          headerTitleAlign: "center",
+          headerShadowVisible: false,
+          headerTintColor: COLORS.blue,
         }}
       />
     </Stack.Navigator>

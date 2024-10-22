@@ -7,7 +7,7 @@ function AbaHome(props) {
 
     function ClickDoctor(id_doctor, name, specialty, icon){
         // console.log(id_doctor, name, specialty, icon)
-        props.navigation.navigate("services")
+        props.navigation.navigate("services", {id_doctor, name, specialty, icon});
     }
     return <View style={styles.container}>
         <Text style={styles.text}>Agende os seus serviços médicos</Text>
