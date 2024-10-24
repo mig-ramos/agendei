@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./register.css";
 import logo from "../../assets/logo.png";
 import fundo from "../../assets/fundo.png"
@@ -30,7 +31,7 @@ function Register(){
        </div>
        <div>
         <span className="me-1">Já tenho uma conta.</span>
-        <a href="#">Acessar agora!</a>
+        <Link to="/">Acessar agora!</Link>
        </div>
        </form>
     </div>
