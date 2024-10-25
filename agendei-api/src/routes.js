@@ -30,6 +30,11 @@ router.post("/users/register", controllerUser.Inserir);
 router.post("/users/login", controllerUser.Login);
 router.get("/users/profile", jwt.ValidateToken, controllerUser.Profile);
 
+// Rotas do Admin...
+router.post("/admin/register", controllerUser.InserirAdmin);
+router.post("/admin/login", controllerUser.LoginAdmin);
+// router.get("/admin/appointments", jwt.ValidateToken, controllerAppointment.Listar);
+
 // Reservas (appointments)
 router.get(
   "/appointments",

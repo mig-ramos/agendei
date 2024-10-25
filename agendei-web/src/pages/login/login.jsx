@@ -8,22 +8,22 @@ import api from "../../constants/api.js";
 function Login(){
 
     const navigate = useNavigate();
-    const [email, setEmail] = useState("miguel@test.com");
-    const [password, setPassword] = useState("123456");
+    const [email, setEmail] = useState("heber@admin.com.br");
+    const [password, setPassword] = useState("12345");
     const [msg, setMsg] = useState("");
 
     async function ExecuteLogin(){
         setMsg("");
 
         try {
-            const response = await api.post("/users/login", {
+            const response = await api.post("/admin/login", {
                 email,
                 password
             });
 console.log(response.data)
             if (response.data) {
                 localStorage.setItem("sessionToken", response.data.token);
-                localStorage.setItem("sessionId", response.data.id_user);
+                localStorage.setItem("sessionId", response.data.id_admin);
                 localStorage.setItem("sessionEmail", response.data.email);
                 localStorage.setItem("sessionName", response.data.name);
                 api.defaults.headers.common['Authorization'] = "Bearer " + response.data.token;
