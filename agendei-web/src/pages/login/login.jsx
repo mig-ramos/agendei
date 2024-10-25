@@ -8,8 +8,8 @@ import api from "../../constants/api.js";
 function Login(){
 
     const navigate = useNavigate();
-    const [email, setEmail] = useState("heber@admin.com.br");
-    const [password, setPassword] = useState("12345");
+    const [email, setEmail] = useState("bando@admin.com.br");
+    const [password, setPassword] = useState("123456");
     const [msg, setMsg] = useState("");
 
     async function ExecuteLogin(){
